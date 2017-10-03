@@ -1,7 +1,9 @@
 Arithmetic mean problem of the Top N records in Database SQL
 
-There are a list of athletes' records consisting of ath_id, name, record,
-r_date. Please find a solution to list the arithmetic means of the best
+There are a list of athletes' records consisting of (id, ath_id, name, record,
+r_date), a single athlete may have several different records.
+
+Please find a solution to list the arithmetic means of the best
 three records(so-called top n, here n is 3) of EACH athlete.
 
 It's hard to write an exact sql query; A stored procedure is possible but
@@ -13,7 +15,8 @@ you the charming & power of "move semantics", "smart pointers", "hash table",
 deserialization), "lambda expression", ... Of course, RAW pointers to the 
 memory buffer are inevitable since you're using C++ instead of Java ^_^
 
-![alt a screenshot of the output result](https://github.com/jerysun/mean_of_best_records/blob/master/mobr.jpg?raw=true)
+![alt a screenshot of the output result]
+(https://github.com/jerysun/mean_of_best_records/blob/master/mobr.jpg?raw=true)
 
 Well, I know you're curious about what the MySQL sql query statement in this
 case looks exactly like. The answer is:
